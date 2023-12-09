@@ -12,6 +12,8 @@ console.log("" == false);
 console.log(1 == true);
 
 // null -> vazio
+// undefined
+
 let minhaVar;
 let varNull = null;
 
