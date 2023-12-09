@@ -1,3 +1,24 @@
-let num = 10;
+// tipo number
+const meuNumero = 3;
 
-console.log(num);
+const primeiroNumero = 1;
+const segundoNumero = 2;
+
+const operacaoMatematica = primeiroNumero + segundoNumero;
+
+console.log(operacaoMatematica);
+
+// ponto flutuante
+
+const numeroPontoFlutuante = 3.3;
+const pontoFlutuanteSemZero = 0.5;
+
+const novaOperacao = primeiroNumero / numeroPontoFlutuante;
+
+console.log(novaOperacao);
+
+// NaN - Not A Number - Não é número
+
+const alura = "Alura";
+
+console.log(alura * primeiroNumero);
