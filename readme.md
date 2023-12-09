@@ -2,11 +2,11 @@
 
 <h6>Revisando conceitos:</h6>
 <br>
-<h1>Variáveis;
-<h1>Operadores condicionais;
-<h1>Laços de repetição;
-<h1>Funções;
-<h1>Arrays;
-<h1>Objetos.
+<li>Variáveis;
+<li>Operadores condicionais;
+<li>Laços de repetição;
+<li>Funções;
+<li>Arrays;
+<li>Objetos.
 
 ##Material para revisão nos estudos.
