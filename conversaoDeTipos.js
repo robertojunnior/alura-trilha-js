@@ -15,3 +15,8 @@ console.log(numero + Number(numeroString));
 
 const numeroString2 = Number("123");
 console.log(numero + numeroString2);
+
+// toString() => -N maiúsculo Number
+
+console.log("O número é " + numeroString.toString() + ".");
+console.log("O numeroString foi convertido para " + typeof numeroString + ".");
