@@ -20,3 +20,8 @@ console.log(numero + numeroString2);
 
 console.log("O número é " + numeroString.toString() + ".");
 console.log("O numeroString foi convertido para " + typeof numeroString + ".");
+
+// usando o sinal + para converter string => Number
+
+const num = "10";
+console.log(typeof +num); // a impressão já irá converter a string para Number com o + antes da variável
