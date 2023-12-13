@@ -1,5 +1,5 @@
 // tipo de dado
-// booleano
+// boolean
 
 // conversão implícita
 const numero = 456;
@@ -24,4 +24,4 @@ console.log("O numeroString foi convertido para " + typeof numeroString + ".");
 // usando o sinal + para converter string => Number
 
 const num = "10";
-console.log(typeof +num); // a impressão já irá converter a string para Number com o + antes da variável
+console.log(typeof +num); // a impressão já irá converter a string para Number com o + antes da variável.
