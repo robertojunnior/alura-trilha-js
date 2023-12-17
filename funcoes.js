@@ -87,3 +87,14 @@ function exibirTexto() {
 }
 // 3º criar o evento de clicar
 apertarBotao.addEventListener("click", exibirTexto);
+
+// -------------------------------------------------------- mudar cor do background
+
+let trocarCor = document.querySelector(".alterar__modo-noturno");
+
+function modoNoturno() {
+  trocarCor.style.backgroundColor = "#545454";
+  trocarCor.style.color = "#fff";
+}
+
+trocarCor.addEventListener("click", modoNoturno);
