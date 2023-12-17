@@ -4,6 +4,8 @@
 
 // 1) declara a função
 //string
+
+// o parâmetro pode ser o que quiser, até a palavra "cueca", mas usar a palavra "texto" ajuda a entender melhor o que se esperar da função
 function imprimeTexto(texto) {
   console.log(texto);
 }
