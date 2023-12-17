@@ -6,8 +6,8 @@
 //string
 
 // o parâmetro pode ser o que quiser, até a palavra "cueca", mas usar a palavra "texto" ajuda a entender melhor o que se esperar da função
-function imprimeTexto(texto) {
-  console.log(texto);
+function imprimeTexto(cueca) {
+  console.log(cueca);
 }
 // 2) executa a função (1 ou + vezes)
 
@@ -35,7 +35,24 @@ function soma2() {
 
 console.log(soma2());
 
-//--------------------------------- função simples ex
+// --------------------------------
+function soma3() {
+  let resultado3 = 2 + 2;
+  console.log(resultado3);
+}
+
+soma3();
+
+// -------------------------------
+
+function soma4() {
+  let resultado4 = 2 * 2 + 6;
+  return resultado4;
+}
+
+console.log(soma4());
+
+// função simples com numero aleatório
 
 const numeroEntrada = prompt(
   "Escolha um número de 0 à 10 para descobrir o número secreto: "
