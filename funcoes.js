@@ -52,12 +52,26 @@ function soma4() {
 
 console.log(soma4());
 
-// função simples com numero aleatório
+// ---------------------Apertar o botao
+
+// 1º selecionar os campos
+const apertarBotao = document.querySelector(".botao");
+const mensagemBonita = document.querySelector(".mensagem");
+
+// 2º declarar a função
+function exibirTexto() {
+  mensagemBonita.innerHTML = "Vai te lascar raparigo!";
+}
+// 3º criar o evento de clicar
+apertarBotao.addEventListener("click", exibirTexto);
+
+// -----------------------função simples com numero aleatório
 
 const numeroEntrada = prompt(
   "Escolha um número de 0 à 10 para descobrir o número secreto: "
 );
 const numeroSecreto = parseInt(Math.random() * 10 + 1);
+console.log(`O número secreto era o: ${numeroSecreto}!`);
 
 function maiorMenor() {
   if (numeroEntrada == numeroSecreto) {
@@ -71,5 +85,6 @@ function maiorMenor() {
       `Ops, você errou! O número secreto é maior que ${numeroEntrada}. Tente novamente!`
     );
   }
+  5;
 }
 maiorMenor();
