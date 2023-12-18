@@ -6,6 +6,8 @@
 //string
 
 // o parâmetro pode ser o que quiser, até a palavra "cueca", mas usar a palavra "texto" ajuda a entender melhor o que se esperar da função
+
+// retorno de soma (a + b)
 function imprimeTexto(cueca) {
   console.log(cueca);
 }
@@ -21,6 +23,7 @@ const b = 43;
 
 function soma() {
   return a + b;
+  // o return sempre tem de ser a ultima linha da função
 }
 
 console.log(soma());
@@ -93,7 +96,7 @@ apertarBotao.addEventListener("click", exibirTexto);
 let trocarCor = document.querySelector(".alterar__modo-noturno");
 
 function modoNoturno() {
-  trocarCor.style.backgroundColor = "#545454";
+  trocarCor.style.backgroundColor = "#000";
   trocarCor.style.color = "#fff";
 }
 
