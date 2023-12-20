@@ -1,8 +1,8 @@
 //---------------------------------------- declaração de função
-// function minhaFuncao(param) {
-//   //código
-// }
-// minhaFuncao("param");
+function minhaFuncao(param) {
+  //código
+}
+minhaFuncao("param");
 
 //---------------------------------------- expressão de função anônima
 
@@ -29,13 +29,9 @@ const resultado = media();
 
 const passouReprovou = function () {
   if (resultado >= 7) {
-    alert(
-      `Parabéns ${nome}, você está APROVADO com uma média de ${media().toFixed(2)}!`
-    );
+    alert(`Parabéns ${nome}, você está APROVADO com uma média de ${media().toFixed(2)}!`);
   } else {
-    alert(
-      `Infelizmente ${nome}, sua média foi ${media().toFixed(2)}! Está abaixo de 7, portanto você está REPROVADO(A)!`
-    );
+    alert(`Infelizmente ${nome}, sua média foi ${media().toFixed(2)}! Está abaixo de 7, portanto você está REPROVADO(A)!`);
   }
 };
 passouReprovou();
