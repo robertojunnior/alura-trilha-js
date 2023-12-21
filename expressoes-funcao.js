@@ -11,7 +11,7 @@ const soma = function (numero1, numero2) {
 };
 console.log(`O resultado dessa função do carai é: ${soma(1, 200)}`);
 
-//---------------------------------------- outro exemplo
+//---------------------------------------- outro exemplo de expressão de função
 
 let nome = prompt("Olá, qual é o seu nome?");
 alert(
