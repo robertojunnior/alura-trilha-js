@@ -20,7 +20,7 @@ const somaNumerosPequenos = (num1, num2) => {
 }
 console.log(somaNumerosPequenos(12, 21));
 
-// modo tradicional ( Não estou vendo benefício na arrow function)
+// modo tradicional declarando ( Não estou vendo benefício na arrow function)
 function somaNumerosPequenos2(num1, num2) {
     if (num1<10||num2<10) {
         return 'um ou ambos bla bla bla'
