@@ -56,7 +56,7 @@ console.log();
 
 ////////////////////////////////// Exemplo de classe JS rodando no NODE
 
-let outroNome = "Cabanda de Graveto"
+let outroNome = "Cabana de Graveto"
 let outraEditora = "Zóio de Jumenta"
 let outrasPaginas = "250"
 
@@ -78,3 +78,22 @@ class outroLivro {
 const newLivro = new outroLivro(outroNome, outraEditora, outrasPaginas);
 newLivro.anunciarTitulo();
 newLivro.descreverTitulo();
+
+
+/////////////////////////////////// reutilizando dados da classe anterior em uma nova classe
+
+class reusoDaClasse extends outroLivro { // estendendo as opções da classe do livro acima
+    constructor (nome, nomeColecao) {
+        super(nome)  //chama o construtor da superclasse
+        this.nomeColecao = nomeColecao
+    }
+
+    descreverColecao() {
+        console.log(`O livro ${this.nome} faz parte da coleção ${this.nomeColecao}.`);
+    }
+}
+const LogicaDeProgramação = new reusoDaClasse("Lógica de Programação", '"Comece a programar arrombado!"');
+LogicaDeProgramação.anunciarTitulo();
+LogicaDeProgramação.descreverColecao();
+
+
