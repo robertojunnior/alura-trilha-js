@@ -1,4 +1,5 @@
-// criando objeto para utilização de classes (Objeto literal)
+/////////////////////////////// criando objeto para utilização de classes 
+///////////////////////////////(Objeto literal)
 const livro = {
     nome: "React Native",
     editora: "Casa do Código",
@@ -12,9 +13,9 @@ const livro = {
 livro.anunciar();
 
 // espaço no node
-console.log("*************************************************");
+console.log();
 
-// segundo exemplo, vou incrementar os prompts para entrada dos dados
+//////////////////////////////////////////////// segundo exemplo, vou incrementar os prompts para entrada dos dados
 
 // Rodar no navegador
 
@@ -26,7 +27,7 @@ console.log("*************************************************");
 
 // rodar no Node
 
-let entradaNome = "José e as cabras no nordeste"
+let entradaNome = "José e as cabras do nordeste"
 let entradaEditora = "Cabra da peste"
 let entradaPaginas = "185"
 
@@ -47,5 +48,33 @@ const Livro = function (){
 }
 const novoLivro = new Livro(entradaNome, entradaEditora, entradaPaginas);
 
-console.log(novoLivro);
 console.log(`O novo livro adicionado foi ${novoLivro.getNome()}, da Editora ${novoLivro.getEditora()} e possui ${novoLivro.getPaginas()} páginas.`);
+
+//espaço Node
+console.log();
+
+
+////////////////////////////////// Exemplo de classe JS rodando no NODE
+
+let outroNome = "Cabanda de Graveto"
+let outraEditora = "Zóio de Jumenta"
+let outrasPaginas = "250"
+
+
+class outroLivro {
+    constructor(nome, editora, paginas){
+    this.nome = nome
+    this.editora = editora
+    this.paginas = paginas
+    }
+    anunciarTitulo() {
+    console. log( `Título: ${this.nome}` )
+    }
+    descreverTitulo() {
+    console. log(`Descrição: ${this.nome} é um livro da editora ${this.editora} e tem ${this.paginas} páginas. `)
+    }
+}
+
+const newLivro = new outroLivro(outroNome, outraEditora, outrasPaginas);
+newLivro.anunciarTitulo();
+newLivro.descreverTitulo();
