@@ -5,7 +5,7 @@ const nomes = ["João", "Carla", "caio", "Lara", "Marjorie", "Léo"];
 // adicionar novos nomes na lista com splice
 nomes.splice(1, 4, "Rodrigo", "Joana", "Roberto");
 
-console.log(nomes);
+console.log(nomes); // ["João", "Rodrigo", "Joana", "Roberto", "Marjorie", "Léo"]
 console.log(); // espaço no node
 
 // ex aula
@@ -14,8 +14,9 @@ animaisDoAquario = ["🐋", "🐙", "🐬", "🦈"];
 
 // Adicionando um peixe-lobo (touro) no meio da lista de animais do aquário
 animaisDoAquario.splice(1, 0, "🐠");
-console.log("Animais do Aquário: ", animaisDoAquario);
+console.log("Animais do Aquário: ", animaisDoAquario); // ["🐋", "🐠", "🐙", "🐬", "🦈"]
 
+//  3 é o índice que vai ser removido e 2 é quantos vamos remover a partir do índice escolhido
 animaisDoAquario.splice(3, 2, "🐟");
-//  3 é o indíce que vai ser removido e 2 é quantos vamos remover a partir do índice escolhido
-console.log(animaisDoAquario);
+
+console.log(animaisDoAquario); // ["🐋", "🐠", "🐙", "🐟"]
