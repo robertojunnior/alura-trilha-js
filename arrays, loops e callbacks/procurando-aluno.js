@@ -7,9 +7,10 @@ const listaDeAlunosNotas = [alunos, medias];
 function exibeNomeNota(aluno) {
   // aluno é o parâmetro, pode ser por input ou add no executar no final
   if (listaDeAlunosNotas[0].includes(aluno)) {
+    // includes verifica se está na lista
     // se na lista matriz posição 0(alunos), contiver o aluno(que vamos sugerir no executar)
 
-    const indice = listaDeAlunosNotas[0].indexOf(aluno);
+    const indice = listaDeAlunosNotas[0].indexOf(aluno); // indexOf verifica a posição do indice do que procuramos
     // declaramos a const indice para utilizar no código geral
 
     const mediaAluno = listaDeAlunosNotas[1][indice];
@@ -24,7 +25,7 @@ function exibeNomeNota(aluno) {
     );
   }
 }
-// vamos criar um prompt para busca do aluno
+// vamos criar um prompt para inserir o nome do aluno para a busca pelo navegador
 alert("Olá, bem vindo a pesquisa de alunos!");
 const pesquisaAluno = prompt("Qual o nome do aluno para pesquisa?");
 exibeNomeNota(pesquisaAluno);
