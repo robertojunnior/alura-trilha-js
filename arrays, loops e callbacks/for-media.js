@@ -38,5 +38,3 @@ for (let valores = 0; valores < diasUber.length; valores++) {
 }
 let media = ganhoTotal / diasUber.length;
 console.log(`O total do seu ganho foi R$ ${ganhoTotal.toFixed(2)}, e a média diária foi de R$ ${media.toFixed(2)}!`);
-
-
