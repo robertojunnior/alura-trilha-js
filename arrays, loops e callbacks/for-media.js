@@ -6,7 +6,9 @@ for (let indice = 0; indice < notas.length; indice++) {
   somaDasNotas = somaDasNotas + notas[indice];
   //   somaDasNotas += notas[indice];
 }
-console.log(somaDasNotas);
+let mediaNotas = somaDasNotas / notas.length;
+console.log(`A soma das notas é ${somaDasNotas} e a sua média é ${mediaNotas}! `);
+
 
 // Explicando o código: somaDasNotas += notas[indice] em mais detalhes.
 
@@ -25,3 +27,16 @@ console.log(somaDasNotas);
 // Iteração 3: somaDasNotas = 16.5 + 8 (notas[2])
 // Iteração 4: somaDasNotas = 24.5 + 7.5 (notas[3])
 // No final, somaDasNotas terá o valor total da soma das notas, que é 32. Portanto, a linha somaDasNotas += notas[indice] é uma maneira concisa de acumular a soma dos valores em um array.
+
+const diasUber = [160, 150, 200, 140, 245];
+
+let ganhoTotal = 0;
+
+for (let valores = 0; valores < diasUber.length; valores++) {
+  ganhoTotal = ganhoTotal + diasUber[valores];
+  // ganhoTotal += diasUber[valores]; forma abreviada
+}
+let media = ganhoTotal / diasUber.length;
+console.log(`O total do seu ganho foi R$ ${ganhoTotal.toFixed(2)}, e a média diária foi de R$ ${media.toFixed(2)}!`);
+
+
