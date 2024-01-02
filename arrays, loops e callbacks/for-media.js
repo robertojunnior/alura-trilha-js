@@ -1,13 +1,13 @@
 const notas = [10, 6.5, 8, 7.5];
 
-let somaDasNotas = 0;
+let somaNotas = 0;
 
 for (let indice = 0; indice < notas.length; indice++) {
-  somaDasNotas = somaDasNotas + notas[indice];
+  somaNotas = somaNotas + notas[indice];
   //   somaDasNotas += notas[indice];
 }
-let mediaNotas = somaDasNotas / notas.length;
-console.log(`A soma das notas é ${somaDasNotas} e a sua média é ${mediaNotas}! `);
+let mediaNotas = somaNotas / notas.length;
+console.log(`A soma das notas é ${somaNotas} e a sua média é ${mediaNotas}! `);
 
 
 // Explicando o código: somaDasNotas += notas[indice] em mais detalhes.
