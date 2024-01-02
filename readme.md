@@ -1,6 +1,5 @@
 <h1 align="center"> Alura - Trilha JavaScript </h1>
 
-
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -28,7 +27,14 @@ Dentre o conteúdo da revisão, temos os seguintes tópicos:
 <li>Laços de repetição;
 <li>Funções;
 <li>Arrays;
-<li>Objetos.
+<li>Objetos;
+<li>Algorítimos;
+<li>Consumo de API;
+<li>Validações de voz;
+<li>Requisições;
+<li>Manipulando DOM;
+<li>Introdução ao TypeScript.
+
 
 ## :memo: Licença
 
