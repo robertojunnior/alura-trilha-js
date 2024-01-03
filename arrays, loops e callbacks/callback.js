@@ -22,3 +22,17 @@ function imprimeNome(nome) {
 }
 
 nomes3.forEach(imprimeNome);
+
+// ---------------------- --------------------------meu exemplo
+
+const listaJogos = ["Battlefield V","Gta V","Call Of Duth MW2","Mário Bros","Donkey Kong","Fifa 2023"];
+  
+  listaJogos.forEach((jogos, cadastro)=>{
+    console.log(`Cadastro: ${cadastro} / Jogo: ${jogos}`);
+  });
+
+
+  
+
+
+  
