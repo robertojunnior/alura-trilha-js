@@ -23,15 +23,15 @@ body {
 }
 
 .container__texto {
-    max-width: 60rem;
+    max-width: 660px;
     text-align: center;
-    margin: 20px 0;
+    margin: 50px 0;
 }
 
 .container__botao {
     width: 300px;
     height: 60px;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: aquamarine;
     font: normal 800 35px Arial;
     margin: 40px 0;
@@ -55,7 +55,7 @@ body {
     width: 300px;
     height: 50px;
     font-size: 25px;
-    padding: 5px;
+    padding: 4px;
 }
 
 .input_resposta {
@@ -66,16 +66,23 @@ body {
     /* Estilos do botão de enviar */
     display: none;
     width: 150px;
-    height: 65px;
+    height: 70px;
     font-size: 25px;
     text-align: center;
 }
 
-.botao--enviar:hover {
+.botao--enviar:hover,
+.botao--responder:hover {
     transform: scale(1.05);
     transition: all .3s ease-in-out;
 }
 
-.botao--responder {
+#avatar,
+#carinha {
+    font-size: 100px;
+}
+
+.botao--responder,
+.emoji__carinha {
     display: none;
 }
