@@ -1,3 +1,3 @@
 ## Acessar Quiz 👩🏻
 
-https://robertojunnior.github.io/alura-trilha-js/
+https://robertojunnior.github.io/alura-trilha-js/quiz-pombaHead
