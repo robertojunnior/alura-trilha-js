@@ -78,6 +78,7 @@ function clicouResponder() {
     esconde(botaoResponder);
     mostra(carinha);
     mostra(reiniciar);
+    mostra(botaoGithub);
   } else {
     conteudoTexto.innerHTML =
       'Por favor, digite apenas "sim ou "não! Sabe ler não pow...';
