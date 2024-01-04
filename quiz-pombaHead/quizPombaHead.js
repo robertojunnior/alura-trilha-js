@@ -50,6 +50,7 @@ function clicouEnviar() {
     mostra(entradaResposta);
     mostra(botaoResponder);
     conteudoTexto.innerHTML = `${nomeUsuario.toUpperCase()}, ${frases[1]}`;
+    // toUpperCase() para transformar e maiúscula a entrada de texto
   } else {
     alert("Por favor, digite seu nome antes de prosseguir.");
   }
@@ -61,6 +62,7 @@ function clicouEnviar() {
 let aprendeuMariana;
 function clicouResponder() {
   aprendeuMariana = entradaResposta.value.toLowerCase();
+  // toLowerCase() para transformar e maiúscula a entrada de texto
   mostra(avatarPessoa);
   if (aprendeuMariana.trim() === "sim") {
     conteudoTexto.innerHTML = `Parabéns ${nomeUsuario} cabeça de pomba, você aprendeu!`;
@@ -78,7 +80,7 @@ function clicouResponder() {
     mostra(reiniciar);
   } else {
     conteudoTexto.innerHTML =
-      "Por favor, digite apenas 'SIM' ou 'NÃO'! Sabe ler não pow...";
+      'Por favor, digite apenas "sim ou "não! Sabe ler não pow...';
     esconde(avatarPessoa);
     mostra(carinha);
   }
@@ -88,5 +90,5 @@ function clicouResponder() {
 // este é um array(lista) com as frase que vou utilizar no quiz
 let frases = [
   "Primeiro, digite seu nome abaixo: 👩🏻 🕊️",
-  `responda "SIM" ou "NÃO"! Aprendeu o básico sobre funções com estes exemplos que te enviei? Se escrever outra coisa vai tomar cascudo...`,
+  `responda "sim" ou "não"! Aprendeu o básico sobre funções com estes exemplos que te enviei? Se escrever outra coisa vai tomar cascudo...`,
 ];
