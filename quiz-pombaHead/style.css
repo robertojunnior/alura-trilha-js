@@ -15,7 +15,7 @@
 body {
     background-color: var(--main-color);
     color: var(--secondary-color);
-    font-size: 2em;
+    font-size: 1.9em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,7 +91,7 @@ body {
 }
 
 .reiniciar__quiz #botao--reiniciar {
-    width: 400px;
+    width: 300px;
 }
 
 a {
