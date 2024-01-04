@@ -22,8 +22,9 @@ function imprimeNome(nome) {
 }
 
 nomes3.forEach(imprimeNome);
+console.log( `Olá ${nomes3}!`);
 
-// ---------------------- --------------------------meu exemplo
+// ---------------------- exemplo livre imprimindo lista de jogos e cadastro
 
 const listaJogos = ["Battlefield V","Gta V","Call Of Duth MW2","Mário Bros","Donkey Kong","Fifa 2023"];
   
@@ -31,8 +32,31 @@ const listaJogos = ["Battlefield V","Gta V","Call Of Duth MW2","Mário Bros","Do
     console.log(`Cadastro: ${cadastro} / Jogo: ${jogos}`);
   });
 
+//----------- exemplo livre - Percorrendo e imprimindo nomes na lista
+// 
+  let listaAlunos = ["Ana", "João", "Mariana", "Carlos", "Isabel", "Rafael", "Luciana", "Gustavo", "Juliana", "Pedro"];
 
+  // ------------------- 1 parâmetro é o elemento, o 2 é o index
+  listaAlunos.forEach((chamada, numeroLista) =>{
+     console.log(`Nº: ${numeroLista} ${chamada} `);
+  });
+       
+  //---------------------- função simples sem parâmetro
   
+let frase = "vai te lascar"
 
+  function escreveFrase() {
+    console.log(frase);
+  }
 
+  escreveFrase();
+
+  //---------------------- função simples com parâmetro
   
+let frase2 = "vai te lascar de novo"
+
+function escreveFrase2(qualquerParametro) {
+  console.log(qualquerParametro);
+}
+
+escreveFrase2(frase2);
