@@ -66,3 +66,16 @@ function escreveFrase2(qualquerParametro) {
 }
 
 escreveFrase2(frase2);
+
+//---------------------- função simples com parâmetro 
+  
+function escreveFrase3() {
+  let frase3 = "vai te lascar de outra vez"
+  console.log(frase3);
+}
+
+escreveFrase3();
+
+// arrow function básica
+const somar = (x, y) => x + y;
+console.log(somar(5,6));
