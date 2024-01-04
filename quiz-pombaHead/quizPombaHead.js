@@ -7,7 +7,6 @@ let botaoResponder = document.querySelector(".botao--responder");
 let avatarPessoa = document.querySelector(".avatar__pessoa");
 let carinha = document.querySelector(".emoji__carinha");
 let reiniciar = document.querySelector(".reiniciar__quiz");
-// let botaoGithub = document.querySelector(".botao--github");
 
 // Abaixo farei 2 funções GLOBAIS para atender o código mais de uma vez
 // 1 - esta função é para esconder as coisas após clicar
@@ -44,6 +43,7 @@ function clicouEnviar() {
   nomeUsuario = entradaNome.value;
 
   if (nomeUsuario.trim() !== "") {
+    //trim() remove espaço em branco
     esconde(entradaNome);
     esconde(botaoEnviar);
     trocaTexto(frases[1]);
@@ -62,14 +62,14 @@ let aprendeuMariana;
 function clicouResponder() {
   aprendeuMariana = entradaResposta.value.toLowerCase();
   mostra(avatarPessoa);
-  if (aprendeuMariana === "sim") {
+  if (aprendeuMariana.trim() === "sim") {
     conteudoTexto.innerHTML = `Parabéns ${nomeUsuario} cabeça de pomba, você aprendeu!`;
     esconde(entradaResposta);
     esconde(botaoResponder);
     esconde(carinha);
     mostra(reiniciar);
     mostra(botaoGithub);
-  } else if (aprendeuMariana === "não") {
+  } else if (aprendeuMariana.trim() === "não") {
     conteudoTexto.innerHTML = `Lamento ${nomeUsuario}, devido a ter cabeça de pomba, vai repetir mais 1000 vezes!`;
     esconde(avatarPessoa);
     esconde(entradaResposta);
@@ -88,5 +88,5 @@ function clicouResponder() {
 // este é um array(lista) com as frase que vou utilizar no quiz
 let frases = [
   "Primeiro, digite seu nome abaixo: 👩🏻 🕊️",
-  `responda "SIM" ou "NÃO"! Você aprendeu o básico sobre funções com estes exemplos? Se escrever outra coisa vai tomar cascudo...`,
+  `responda "SIM" ou "NÃO"! Aprendeu o básico sobre funções com estes exemplos que te enviei? Se escrever outra coisa vai tomar cascudo...`,
 ];
