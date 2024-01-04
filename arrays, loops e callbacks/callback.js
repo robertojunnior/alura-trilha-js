@@ -24,10 +24,16 @@ function imprimeNome(nome) {
 nomes3.forEach(imprimeNome);
 console.log( `Olá ${nomes3}!`);
 
-// ---------------------- exemplo livre imprimindo lista de jogos e cadastro
-
-const listaJogos = ["Battlefield V","Gta V","Call Of Duth MW2","Mário Bros","Donkey Kong","Fifa 2023"];
-  
+// ------------ exemplo livre imprimindo lista de jogos e posição cadastro
+const listaJogos = [
+  "Battlefield V",
+  "Gta V",
+  "Call Of Duth MW2",
+  "Mário Bros",
+  "Donkey Kong",
+  "Fifa 2023",
+];
+ 
   listaJogos.forEach((jogos, cadastro)=>{
     console.log(`Cadastro: ${cadastro} / Jogo: ${jogos}`);
   });
