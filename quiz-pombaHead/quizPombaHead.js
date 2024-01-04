@@ -6,6 +6,7 @@ let entradaResposta = document.getElementById("input_resposta");
 let botaoResponder = document.querySelector(".botao--responder");
 let avatarPessoa = document.querySelector(".avatar__pessoa");
 let carinha = document.querySelector(".emoji__carinha");
+let reiniciar = document.querySelector(".reiniciar__quiz");
 
 // Abaixo farei 2 funções GLOBAIS para atender mais de uma vez
 // 1 - esta função é para esconder as coisas após clicar
@@ -65,11 +66,13 @@ function clicouResponder() {
     esconde(entradaResposta);
     esconde(botaoResponder);
     esconde(carinha);
+    mostra(reiniciar);
   } else if (aprendeuMariana === "não") {
     conteudoTexto.innerHTML = `Lamento ${nomeUsuario}, devido a ter cabeça de pomba, vai repetir mais 1000 vezes!`;
     esconde(avatarPessoa);
     esconde(entradaResposta);
     esconde(botaoResponder);
+    mostra(reiniciar);
   } else {
     conteudoTexto.innerHTML =
       "Por favor, digite apenas 'sim' ou 'não'! Sabe ler não pow...";

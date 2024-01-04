@@ -35,6 +35,7 @@ body {
     background-color: aquamarine;
     font: normal 800 35px Arial;
     margin: 40px 0;
+    text-align: center;
 }
 
 .container__botao:hover {
@@ -83,6 +84,11 @@ body {
 }
 
 .botao--responder,
-.emoji__carinha {
+.emoji__carinha,
+.reiniciar__quiz {
     display: none;
+}
+
+.reiniciar__quiz #botao--reiniciar {
+    width: 400px;
 }
