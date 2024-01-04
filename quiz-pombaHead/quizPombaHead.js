@@ -72,6 +72,7 @@ function clicouResponder() {
     esconde(avatarPessoa);
     esconde(entradaResposta);
     esconde(botaoResponder);
+    mostra(carinha);
     mostra(reiniciar);
   } else {
     conteudoTexto.innerHTML =
