@@ -33,6 +33,7 @@ body {
     height: 60px;
     border-radius: 10px;
     background-color: aquamarine;
+    color: var(--main-color);
     font: normal 800 35px Arial;
     margin: 40px 0;
     text-align: center;
@@ -40,8 +41,8 @@ body {
 
 .container__botao:hover {
     cursor: pointer;
-    transform: scale(1.2);
-    transition: all .3s ease-in-out;
+    transform: scale(1.3);
+    transition: .3s ease-in-out;
 }
 
 .container__entradas {
@@ -74,7 +75,7 @@ body {
 
 .botao--enviar:hover,
 .botao--responder:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     transition: all .3s ease-in-out;
 }
 
@@ -91,4 +92,9 @@ body {
 
 .reiniciar__quiz #botao--reiniciar {
     width: 400px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
 }
