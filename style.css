@@ -1,0 +1,81 @@
+/* reset do css */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* variáveis */
+:root {
+    --main-color: rgb(41, 41, 41);
+    --secondary-color: aliceblue;
+}
+
+body {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__texto {
+    max-width: 60rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.container__botao {
+    width: 300px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: aquamarine;
+    font: normal 800 35px Arial;
+    margin: 40px 0;
+}
+
+.container__botao:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all .3s ease-in-out;
+}
+
+.container__entradas {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.container__input {
+    display: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.input_resposta {
+    display: none;
+}
+
+.botao--enviar {
+    /* Estilos do botão de enviar */
+    display: none;
+    width: 150px;
+    height: 65px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.botao--enviar:hover {
+    transform: scale(1.05);
+    transition: all .3s ease-in-out;
+}
+
+.botao--responder {
+    display: none;
+}
