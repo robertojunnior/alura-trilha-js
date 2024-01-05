@@ -1,22 +1,18 @@
 @media screen and (max-width: 550px) {
     body {
-        padding: 20px;
-        font-size: 20px;
-    }
-  
-    .container__botao {
-        width:70%;
-        margin: 10px auto;
-        font-size: 20px;
+        padding: 30px;
+        font-size: 0.8em;
     }
 
-    .container__entradas {
+    .container__texto {
+        text-align: left;
+    }
+  
+    .container__botoes {
         flex-direction: column;
     }
 
-    .reiniciar__quiz {
-        text-align: center;
+    .container__botao{
+        margin: 10px;
     }
-
-
 }
