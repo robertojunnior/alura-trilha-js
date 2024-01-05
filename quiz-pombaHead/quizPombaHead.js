@@ -47,9 +47,9 @@ function clicouEnviar() {
   nomeUsuario = entradaNome.value;
   if (nomeUsuario.trim() !== "") {// se nome de usuario não estiver "" ou seja vazio
     //trim() remove espaço em branco, desconsiderando o espaço que os celulares colocam automaticamente
+    trocaTexto(`${nomeUsuario},</br> ${frases[1]}`);
     esconde(entradaNome);
     esconde(botaoEnviar);
-    trocaTexto(`${nomeUsuario},</br> ${frases[1]}`);
     mostra(avatar);
     mostra(botaoOk);
   } else {
