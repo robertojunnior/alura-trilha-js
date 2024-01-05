@@ -14,6 +14,7 @@ let botaoGithub = document.querySelector(".botao--github")
 
 // Abaixo fiz 3 funções GLOBAIS para atender o código mais de uma vez
 // 1 - esta função global é para esconder itens após clicar
+
 function esconde(esconder) {
   esconder.style.display = "none";
 }
@@ -74,7 +75,7 @@ function clicouResponder() {
   // toLowerCase() para transformar em minúscula a entrada de texto e ser igual a minha condição
 
   if (aprendeuMariana.trim() === "sim") {
-    conteudoTexto.innerHTML = `Parabéns ${nomeUsuario}, que bom que você aprendeu! Agora faça mais exemplos simples para treinar.`;
+    conteudoTexto.innerHTML = `Parabéns ${nomeUsuario}, que bom que você aprendeu! Agora faça mais exemplos simples para treinar.`;  
     esconde(entradaResposta);
     esconde(botaoResponder);
     esconde(carinha);
