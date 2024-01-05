@@ -102,5 +102,5 @@ let frases = [
   "Pu favô, digite seu nome abaixo ⌨️",
   'a seguir terá uma pergunta onde você só poderá responder "sim ou não" ok?',
   "Aprendeu o básico sobre funções com os exemplos que te enviei?",
-  'digite apenas "sim ou não"!'
+  'digite corretamente e apenas "sim ou não"!'
 ];
