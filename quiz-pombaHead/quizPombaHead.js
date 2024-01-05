@@ -65,7 +65,7 @@ function clicouResponder() {
   // toLowerCase() para transformar e maiúscula a entrada de texto
   mostra(avatarPessoa);
   if (aprendeuMariana.trim() === "sim") {
-    conteudoTexto.innerHTML = `Parabéns ${nomeUsuario} cabeça de pomba, você aprendeu!`;
+    conteudoTexto.innerHTML = `Parabéns ${nomeUsuario}, que bom que você aprendeu! Faça mais exemplos simples para treinar.`;
     esconde(entradaResposta);
     esconde(botaoResponder);
     esconde(carinha);
@@ -91,5 +91,5 @@ function clicouResponder() {
 // este é um array(lista) com as frase que vou utilizar no quiz
 let frases = [
   "Primeiro, digite seu nome abaixo: 👩🏻 🕊️",
-  `responda "sim" ou "não"! Aprendeu o básico sobre funções com estes exemplos que te enviei? Se escrever outra coisa vai tomar cascudo...`,
+  'responda "sim" ou "não"! Aprendeu o básico sobre funções com estes exemplos que te enviei? Se escrever outra coisa vai tomar cascudo...',
 ];
