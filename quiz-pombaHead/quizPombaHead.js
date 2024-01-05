@@ -8,7 +8,7 @@ let avatarPessoa = document.querySelector(".avatar__pessoa");
 let carinha = document.querySelector(".emoji__carinha");
 let reiniciar = document.querySelector(".reiniciar__quiz");
 
-// Abaixo farei 2 funções GLOBAIS para atender o código mais de uma vez
+// Abaixo farei 3 funções GLOBAIS para atender o código mais de uma vez
 // 1 - esta função é para esconder as coisas após clicar
 function esconde(esconder) {
   esconder.style.display = "none";
@@ -20,7 +20,7 @@ function mostra(mostrar) {
 }
 //-----------------------------------------
 
-// esta função global serve para trocar os textos
+// 3 - esta função global serve para trocar os textos
 function trocaTexto(texto) {
   conteudoTexto.innerHTML = texto;
 }
