@@ -16,7 +16,6 @@
 body {
     background-color: var(--primary-color);
     color: var(--secondary-color);  
-    margin-top: 100px;
 }
 
 main {
@@ -27,14 +26,18 @@ main {
 }
 
 .container__texto {
-    max-width: 1200px;
+    max-width: 850px;
     text-align: left;
     margin: 50px 0;
-    font: normal 700 3em var(--font-family);
+    font: normal 700 2.5em var(--font-family);
 }
 
+.container__botoes{
+    display: flex;
+    flex-direction: row;
+}
 .container__botao {
-    width: 250px;
+    width: 200px;
     height: 60px;
     border-radius: 10px;
     background-color: var(--button-color);
@@ -58,7 +61,7 @@ main {
 
 .container__input {
     border-radius: 10px;
-    width: 300px;
+    width: 250px;
     height: 50px;
     font-size: 25px;
     padding: 5px;
