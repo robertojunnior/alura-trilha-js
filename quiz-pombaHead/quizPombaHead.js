@@ -49,7 +49,7 @@ function clicouEnviar() {
     //trim() remove espaço em branco, desconsiderando o espaço que os celulares colocam automaticamente
     esconde(entradaNome);
     esconde(botaoEnviar);
-    trocaTexto(`${nomeUsuario}, ${frases[1]}`);
+    trocaTexto(`${nomeUsuario},</br> ${frases[1]}`);
     mostra(avatar);
     mostra(botaoOk);
   } else {
@@ -74,7 +74,7 @@ function clicouResponder() {
   // toLowerCase() para transformar em minúscula a entrada de texto e ser igual a minha condição
 
   if (aprendeuMariana.trim() === "sim") {
-    conteudoTexto.innerHTML = `Parabéns ${nomeUsuario}, que bom que você aprendeu! Agora faça mais exemplos simples para treinar.`;
+    conteudoTexto.innerHTML = `Parabéns ${nomeUsuario}🎉, que bom que você aprendeu! Agora faça mais exemplos simples para treinar.`;
     esconde(entradaResposta);
     esconde(botaoResponder);
     esconde(carinha);
