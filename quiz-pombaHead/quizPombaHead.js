@@ -41,13 +41,12 @@ function clicouIniciar() {
 }
 //--------------------------------------
 
-// Verificando se o nome foi inserido antes de usar esta função que esconde o input nome, botão enviar e mostra a segunda parte do quiz
+// Verificando se o nome foi inserido antes de usar esta função que esconde o input nome, botão enviar mostrando a segunda parte do quiz, trocando o texto e mostrando avatar e botao ok
 let nomeUsuario;
 function clicouEnviar() {
   nomeUsuario = entradaNome.value;
-
-  if (nomeUsuario.trim() !== "") {
-    //trim() remove espaço em branco
+  if (nomeUsuario.trim() !== "") {// se nome de usuario não estiver "" ou seja vazio
+    //trim() remove espaço em branco, desconsiderando o espaço que os celulares colocam automaticamente
     esconde(entradaNome);
     esconde(botaoEnviar);
     trocaTexto(`${nomeUsuario}, ${frases[1]}`);
@@ -58,7 +57,7 @@ function clicouEnviar() {
   }
 }
 //--------------------------------------
-// Confirmou que só poderá responder sim ou não, clicando em ok
+// Esta função é para o o botão ok, confirma que só poderá responder sim ou não, clicando em ok, esconde o botão após clicar, mostra o novo texto com a pergunta, mostra a próxima parte que são as entradas e botão de resposta da pergunta
 function clicouOk() {
   trocaTexto(frases[2]);
   esconde(botaoOk);
@@ -67,7 +66,7 @@ function clicouOk() {
 }
 //-------------------------------------
 
-// esta função contém as respostas, serão utilizadas apenas se a entradaResposta atender a condição abaixo
+// esta função contém as respostas, serão utilizadas apenas se a entradaResposta atender a condição que eu escolhi das respostas SIM ou NÃO
 
 let aprendeuMariana;
 function clicouResponder() {
@@ -75,7 +74,7 @@ function clicouResponder() {
   // toLowerCase() para transformar em minúscula a entrada de texto e ser igual a minha condição
 
   if (aprendeuMariana.trim() === "sim") {
-    conteudoTexto.innerHTML = `Parabéns ${nomeUsuario}, que bom que você aprendeu! Agora faça mais exemplos simples para treinar.`;  
+    conteudoTexto.innerHTML = `Parabéns ${nomeUsuario}, que bom que você aprendeu! Agora faça mais exemplos simples para treinar.`;
     esconde(entradaResposta);
     esconde(botaoResponder);
     esconde(carinha);
