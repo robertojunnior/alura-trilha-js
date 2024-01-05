@@ -1,40 +1,43 @@
+// Abaixo temos tudo o que vai ser manipulado no código
 let conteudoTexto = document.querySelector(".container__texto");
-let botaoCliqueAqui = document.querySelector(".botao_cliqueAqui");
-let entradaNome = document.getElementById("input_nome");
+let botaoIniciar = document.querySelector(".botao--iniciar");
+let entradaNome = document.querySelector(".input--nome");
 let botaoEnviar = document.querySelector(".botao--enviar");
-let entradaResposta = document.getElementById("input_resposta");
+let botaoOk = document.querySelector(".botao--ok")
+let entradaResposta = document.querySelector(".input--resposta");
 let botaoResponder = document.querySelector(".botao--responder");
-let avatarPessoa = document.querySelector(".avatar__pessoa");
-let carinha = document.querySelector(".emoji__carinha");
-let reiniciar = document.querySelector(".reiniciar__quiz");
+let avatar = document.querySelector("#avatar");
+let carinha = document.querySelector("#carinha");
+let reiniciar = document.querySelector(".botao--reiniciar");
+let botaoGithub = document.querySelector(".botao--github")
+//--------------------------------------------------------------- 
 
-// Abaixo farei 2 funções GLOBAIS para atender o código mais de uma vez
-// 1 - esta função é para esconder as coisas após clicar
+// Abaixo fiz 3 funções GLOBAIS para atender o código mais de uma vez
+// 1 - esta função global é para esconder itens após clicar
 function esconde(esconder) {
   esconder.style.display = "none";
 }
+//------------------------------------------
 
-// 2 - esta função é para mostrar as coisas após clicar
+// 2 - esta função global é para mostrar os itens após clicar
 function mostra(mostrar) {
   mostrar.style.display = "block";
 }
 //-----------------------------------------
 
-// esta função global serve para trocar os textos
+// 3 - esta função global serve para trocar os textos
 function trocaTexto(texto) {
   conteudoTexto.innerHTML = texto;
 }
 //----------------------------------------
 
-// esta função esconde o botão clique aqui, troca o texto e mostra o container de entrada do nome e botão enviar
-function clicouNoBotaoCliqueAqui() {
+// esta função, após clicar no botão iniciar esconde o botão iniciar, troca o texto, mostra o container de entrada do nome e botão enviar
+function clicouIniciar() {
   trocaTexto(frases[0]);
-  esconde(botaoCliqueAqui);
-  esconde(avatarPessoa);
+  esconde(botaoIniciar);
   mostra(botaoEnviar);
   mostra(entradaNome);
 }
-
 //--------------------------------------
 
 // Verificando se o nome foi inserido antes de usar esta função que esconde o input nome, botão enviar e mostra a segunda parte do quiz
@@ -46,50 +49,58 @@ function clicouEnviar() {
     //trim() remove espaço em branco
     esconde(entradaNome);
     esconde(botaoEnviar);
-    trocaTexto(frases[1]);
-    mostra(entradaResposta);
-    mostra(botaoResponder);
-    conteudoTexto.innerHTML = `${nomeUsuario.toUpperCase()}, ${frases[1]}`;
-    // toUpperCase() para transformar e maiúscula a entrada de texto
+    trocaTexto(`${nomeUsuario}, ${frases[1]}`);
+    mostra(avatar);
+    mostra(botaoOk);
   } else {
     alert("Por favor, digite seu nome antes de prosseguir.");
   }
 }
 //--------------------------------------
+// Confirmou que só poderá responder sim ou não, clicando em ok
+function clicouOk() {
+  trocaTexto(frases[2]);
+  esconde(botaoOk);
+  mostra(entradaResposta);
+  mostra(botaoResponder);
+}
+//-------------------------------------
 
 // esta função contém as respostas, serão utilizadas apenas se a entradaResposta atender a condição abaixo
 
 let aprendeuMariana;
 function clicouResponder() {
   aprendeuMariana = entradaResposta.value.toLowerCase();
-  // toLowerCase() para transformar e maiúscula a entrada de texto
-  mostra(avatarPessoa);
+  // toLowerCase() para transformar em minúscula a entrada de texto e ser igual a minha condição
+
   if (aprendeuMariana.trim() === "sim") {
-    conteudoTexto.innerHTML = `Parabéns ${nomeUsuario} cabeça de pomba, você aprendeu!`;
+    conteudoTexto.innerHTML = `Parabéns ${nomeUsuario}, que bom que você aprendeu! Agora faça mais exemplos simples para treinar.`;
     esconde(entradaResposta);
     esconde(botaoResponder);
     esconde(carinha);
+    mostra(avatar);
     mostra(reiniciar);
     mostra(botaoGithub);
   } else if (aprendeuMariana.trim() === "não") {
     conteudoTexto.innerHTML = `Lamento ${nomeUsuario}, devido a ter cabeça de pomba, vai repetir mais 1000 vezes!`;
-    esconde(avatarPessoa);
+    esconde(avatar);
     esconde(entradaResposta);
     esconde(botaoResponder);
     mostra(carinha);
     mostra(reiniciar);
     mostra(botaoGithub);
   } else {
-    conteudoTexto.innerHTML =
-      'Por favor, digite apenas "sim ou "não! Sabe ler não pow...';
-    esconde(avatarPessoa);
+    trocaTexto(`${nomeUsuario}, ${frases[3]}`)
+    esconde(avatar);
     mostra(carinha);
   }
 }
 //----------------------------------------
 
-// este é um array(lista) com as frase que vou utilizar no quiz
+// este é um array(lista) com as frase que vou utilizar no quiz, cada frase tem uma posição começando do 0,1,2 e assim por diante
 let frases = [
-  "Primeiro, digite seu nome abaixo: 👩🏻 🕊️",
-  `responda "sim" ou "não"! Aprendeu o básico sobre funções com estes exemplos que te enviei? Se escrever outra coisa vai tomar cascudo...`,
+  "Pu favô, digite seu nome abaixo ⌨️",
+  'a seguir terá uma pergunta onde você só poderá responder "sim ou não" ok?',
+  "Aprendeu o básico sobre funções com os exemplos que te enviei?",
+  'digite apenas "sim ou não"!'
 ];
