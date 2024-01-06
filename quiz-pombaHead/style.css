@@ -14,12 +14,12 @@
 }
 
 body {
+    box-sizing: border-box;
     background-color: var(--primary-color);
     color: var(--secondary-color);  
 }
 
-main, a {
-    box-sizing: border-box;
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,6 +89,4 @@ main, a {
 a {
     text-decoration: none;
     color: var(--main-color);
-    display: flex;
-    align-items: center;
 }

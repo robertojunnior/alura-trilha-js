@@ -97,10 +97,10 @@ function clicouResponder() {
 }
 //----------------------------------------
 
-// função para direcionar ao repositório assim que clicar no botão github
-function clicouGithub() {
-  location.href = "https://github.com/robertojunnior/alura-trilha-js/tree/main/quiz-pombaHead";
-}
+// uma forma de direcionar link também pode ser pelo js, ex desta função para direcionar ao repositório assim que clicar no botão github
+// function clicouGithub() {
+//   location.href = "https://github.com/robertojunnior/alura-trilha-js/tree/main/quiz-pombaHead";
+// }
 //------------------------------------------
 
 // este é um array(lista) com as frase que vou utilizar no quiz, cada frase tem uma posição começando do 0,1,2 e assim por diante
