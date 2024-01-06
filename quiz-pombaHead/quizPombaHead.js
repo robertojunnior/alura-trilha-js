@@ -53,10 +53,10 @@ function clicouEnviar() {
     mostra(avatar);
     mostra(botaoOk);
   } else {
-    alert("Por favor, digite seu nome antes de prosseguir.");
+    alert(`${frases[6]}`);
   }
 }
-//--------------------------------------
+
 // Esta função é para o o botão ok, confirma que só poderá responder sim ou não, clicando em ok, esconde o botão após clicar, mostra o novo texto com a pergunta, mostra a próxima parte que são as entradas e botão de resposta da pergunta
 function clicouOk() {
   trocaTexto(frases[2]);
@@ -74,7 +74,7 @@ function clicouResponder() {
   // toLowerCase() para transformar em minúscula a entrada de texto e ser igual a minha condição
 
   if (aprendeuMariana.trim() === "sim") {
-    conteudoTexto.innerHTML = `Parabéns ${nomeUsuario}🎉, que bom que você aprendeu! Agora faça mais exemplos simples para treinar.`;
+    trocaTexto(`Parabéns ${nomeUsuario}🎉, ${frases[5]}`)
     esconde(entradaResposta);
     esconde(botaoResponder);
     esconde(carinha);
@@ -82,7 +82,7 @@ function clicouResponder() {
     mostra(reiniciar);
     mostra(botaoGithub);
   } else if (aprendeuMariana.trim() === "não") {
-    conteudoTexto.innerHTML = `Lamento ${nomeUsuario}, devido a ter cabeça de pomba, vai repetir mais 1000 vezes!`;
+    trocaTexto(`Que pena ${nomeUsuario}, ${frases[4]}`)
     esconde(avatar);
     esconde(entradaResposta);
     esconde(botaoResponder);
@@ -90,7 +90,7 @@ function clicouResponder() {
     mostra(reiniciar);
     mostra(botaoGithub);
   } else {
-    trocaTexto(`${nomeUsuario}, ${frases[3]}`)
+    alert(trocaTexto(`${nomeUsuario}, ${frases[3]}`));
     esconde(avatar);
     mostra(carinha);
   }
@@ -99,8 +99,12 @@ function clicouResponder() {
 
 // este é um array(lista) com as frase que vou utilizar no quiz, cada frase tem uma posição começando do 0,1,2 e assim por diante
 let frases = [
-  "Pu favô, digite seu nome abaixo ⌨️",
+  'Pu favô, digite seu nome abaixo ⌨️',
   'a seguir terá uma pergunta onde você só poderá responder "sim ou não" ok?',
-  "Aprendeu o básico sobre funções com os exemplos que te enviei?",
-  'digite corretamente e apenas "sim ou não"!'
+  'Já aprendeu o básico sobre operadores, tipos, variáveis e funções simples em JavaScript?',
+  'digite apenas "sim ou não" e corretamente!',
+  `devido a possuir uma enorme cabeça de pomba, melhor repetir os exercícios umas 1000 vezes se for preciso!`,
+  `que bom que você aprendeu! Agora faça mais exemplos simples para treinar.`,
+  'Por favor, digite seu nome antes de prosseguir.'
 ];
+//--------------------------------------

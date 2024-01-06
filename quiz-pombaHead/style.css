@@ -36,6 +36,7 @@ main, a {
     display: flex;
     flex-direction: row;
 }
+
 .container__botao {
     width: 200px;
     height: 60px;
@@ -87,4 +88,6 @@ main, a {
 a {
     text-decoration: none;
     color: var(--main-color);
+    display: flex;
+    align-items: center;
 }
