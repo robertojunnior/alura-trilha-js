@@ -46,7 +46,7 @@ let nomeUsuario;
 function clicouEnviar() {
   nomeUsuario = entradaNome.value;
   if (nomeUsuario.trim() !== "") {// se nome de usuario não estiver "" ou seja vazio
-    //trim() remove espaço em branco, desconsiderando o espaço que os celulares colocam automaticamente
+    //trim() remove espaço em branco digitado, desconsiderando o espaço que os celulares colocam automaticamente
     trocaTexto(`${nomeUsuario},</br> ${frases[1]}`);
     esconde(entradaNome);
     esconde(botaoEnviar);
@@ -97,6 +97,12 @@ function clicouResponder() {
 }
 //----------------------------------------
 
+// função para direcionar ao repositório assim que clicar no botão github
+function clicouGithub() {
+  location.href = "https://github.com/robertojunnior/alura-trilha-js/tree/main/quiz-pombaHead";
+}
+//------------------------------------------
+
 // este é um array(lista) com as frase que vou utilizar no quiz, cada frase tem uma posição começando do 0,1,2 e assim por diante
 let frases = [
   'Pu favô, digite seu nome abaixo ⌨️',
@@ -105,6 +111,8 @@ let frases = [
   'digite corretamente apenas "sim ou não"!',
   `devido a possuir uma enorme cabeça de pomba, melhor repetir os exercícios umas 1000 vezes se for preciso!`,
   `que bom que você aprendeu! Agora faça mais exemplos simples para treinar.`,
-  'Por favor, digite seu nome antes de prosseguir.'
+  'Por favor, digite seu nome antes de prosseguir.',
+  ""
 ];
 //--------------------------------------
+
