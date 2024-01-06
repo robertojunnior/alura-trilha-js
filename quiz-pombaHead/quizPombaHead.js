@@ -90,7 +90,7 @@ function clicouResponder() {
     mostra(reiniciar);
     mostra(botaoGithub);
   } else {
-    alert(trocaTexto(`${nomeUsuario}, ${frases[3]}`));
+    trocaTexto(`${nomeUsuario}, ${frases[3]}`);
     esconde(avatar);
     mostra(carinha);
   }
@@ -102,7 +102,7 @@ let frases = [
   'Pu favô, digite seu nome abaixo ⌨️',
   'a seguir terá uma pergunta onde você só poderá responder "sim ou não" ok?',
   'Já aprendeu o básico sobre operadores, tipos, variáveis e funções simples em JavaScript?',
-  'digite apenas "sim ou não" e corretamente!',
+  'digite corretamente apenas "sim ou não"!',
   `devido a possuir uma enorme cabeça de pomba, melhor repetir os exercícios umas 1000 vezes se for preciso!`,
   `que bom que você aprendeu! Agora faça mais exemplos simples para treinar.`,
   'Por favor, digite seu nome antes de prosseguir.'
