@@ -50,3 +50,5 @@ for (let numerosDaLista of lista3) {
     soma3 = soma3 + numerosDaLista;
 }
 console.log(`A soma de todos os números da lista é: ${soma3}.`);
+
+//-------------------------------------for 
