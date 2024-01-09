@@ -25,3 +25,22 @@ const pontoNegativo = notas.map((nota) => {
     return nota - 1 < 0 ? 0 : nota - 1;
 });
 console.log(pontoNegativo);
+
+// ex livre de forEach, com acréscimo de valor após uma condição
+
+const funcionarios = ["Mariana", "Lontra"];
+
+let entradaSalario = prompt("Olá, qual o seu salário atual miseravi?");
+entradaSalario = parseFloat(entradaSalario);
+
+funcionarios.forEach((nome) => {
+    let bonus1 = 200;
+    let bonus2 = 100;
+
+    if (entradaSalario <= 1500) {
+        alert(`${nome}, seu bônus salarial será de R$ ${(bonus1 + bonus2).toFixed(2)}, e seu novo salário será um total de R$ ${(entradaSalario + bonus1 + bonus2).toFixed(2)}.`);
+    } else {
+        alert(`${nome}, seu bônus salarial será de R$ ${(bonus1).toFixed(2)}, e seu novo salário será um total de R$ ${(entradaSalario + bonus1).toFixed(2)}.`);
+    }
+});
+
