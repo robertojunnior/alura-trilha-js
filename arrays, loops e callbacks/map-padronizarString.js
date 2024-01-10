@@ -16,3 +16,14 @@ console.log(nomes2Padronizados);
 const nomes3 = ["marco aurélio", "caioba oliveira", "marcela silva"];
 const caixaAlta = nomes3.map((nome) => nome.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' '));
 console.log(caixaAlta);
+
+
+const nome = "alura";
+
+// Retorna o primeiro caracter da string "alura" em letra maiúscula,
+// e concatena com o restante da string atraves do método substring().
+// O método substring()retorna a parte da string entre os índices inicial e final, ou até o final da string.
+
+const primeiraLetraMaiuscula = nome[0].toUpperCase() + nome.substring(1);
+
+console.log(primeiraLetraMaiuscula);
