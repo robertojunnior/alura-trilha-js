@@ -44,3 +44,12 @@ funcionarios.forEach((nome) => {
     }
 });
 
+// ex de else if para mariana
+let alturaMariana = 1.49
+if (alturaMariana > 1.50) {
+    console.log("Ela cresceu");
+} else if (alturaMariana > 1.50 && alturaMariana < 1.80) {
+    console.log("Está crescendo");
+} {
+    console.log("É anãzinha mesmo");
+}
