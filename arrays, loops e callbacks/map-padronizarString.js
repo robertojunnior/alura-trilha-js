@@ -11,3 +11,8 @@ console.log(padronizandoNome);
 const nomes2 = ['MARIETA', 'CAIO BARCELOS', 'BIA DOLLAR'];
 const nomes2Padronizados = nomes2.map((nome) => nome.toLowerCase());
 console.log(nomes2Padronizados);
+
+// primeira letra de cada nome em maiúscula
+const nomes3 = ["ana julia", "caio vinícius", "bianca silva"];
+const caixaAlta = nomes3.map((nome) => nome.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' '));
+console.log(caixaAlta);
