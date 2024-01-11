@@ -30,7 +30,8 @@ console.log(pontoNegativo);
 
 const funcionarios = ["Mariana", "Lontra"];
 
-let entradaSalario = prompt("Olá, qual o seu salário atual miseravi?");
+// let entradaSalario = prompt("Olá, qual o seu salário atual miseravi?");
+let entradaSalario = 1000;
 entradaSalario = parseFloat(entradaSalario);
 
 funcionarios.forEach((nome) => {
@@ -38,10 +39,10 @@ funcionarios.forEach((nome) => {
     let bonus2 = 100;
 
     if (entradaSalario <= 1500) {
-        alert(`${nome}, seu bônus salarial será de R$ ${(bonus1 + bonus2).toFixed(2)}, 
+        console.log(`${nome}, seu bônus salarial será de R$ ${(bonus1 + bonus2).toFixed(2)}, 
         e seu novo salário será um total de R$ ${(entradaSalario + bonus1 + bonus2).toFixed(2)}.`);
     } else {
-        alert(`${nome}, seu bônus salarial será de R$ ${(bonus1).toFixed(2)}, 
+        console.log(`${nome}, seu bônus salarial será de R$ ${(bonus1).toFixed(2)}, 
         e seu novo salário será um total de R$ ${(entradaSalario + bonus1).toFixed(2)}.`);
     }
 });
@@ -56,13 +57,45 @@ if (alturaMariana > 1.50) {
     console.log("É anãzinha mesmo");
 }
 
-//ex map com função declarada padrão
+//ex map com função declarada padrão e com parâmetro
+const valores = [1, 3, 5, 7, 9];
 
-const valores = [1, 3, 5, 7, 9]
+// -------------------- retornando o dobro
+const dobro = function (valor) {
+    return valor * 2;
+};
+const resultadoDobro = valores.map(dobro);
+console.log(resultadoDobro);
 
+// dobro com arrow function
+
+const valores2 = [2, 5, 7, 14];
+
+const dobro2 = (valor) => {
+    return valor * 2;
+};
+const resultadoDobro2 = valores2.map(dobro2)
+console.log(resultadoDobro2);
+
+//-------------- somando os numeros do array com map
+const valores3 = [5, 9, 13, 22];
+let contador = 0;
+
+// percorrendo com for clássico
+// for (let i = 0; i < valores3.length; i++) {
+//     contador = contador + valores3[i]
+// }
+
+// percorrendo com map e somando os valores do array
+valores3.map(function somarValor(valor) {
+    contador += valor;
+});
+
+console.log(`Esta é o valor do contador: ${contador}!`);
+
+//----------- somando mais um a cada iteração
 function somaMaisUm(valor) {
     return valor + 1;
 }
 const valoresComSoma = valores.map(somaMaisUm);
-console.log(valoresComSoma);
-
+console.log(valoresComSoma); //mostrando os valores com a adição do return
