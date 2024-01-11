@@ -17,7 +17,7 @@ const nomes3 = ["marco aurélio", "caioba oliveira", "marcela silva"];
 const caixaAlta = nomes3.map((nome) => nome.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' '));
 console.log(caixaAlta);
 
-
+//-------------------------------------------------------------------------------------------------------
 const nome = "alura";
 
 // Retorna o primeiro caracter da string "alura" em letra maiúscula,
@@ -27,3 +27,16 @@ const nome = "alura";
 const primeiraLetraMaiuscula = nome[0].toUpperCase() + nome.substring(1);
 
 console.log(primeiraLetraMaiuscula);
+
+
+// mais uma solução dada pelo artigo pós aula
+const arrayNums = [1, 2, 3, 4];
+
+function multiplicaPorDez(num) {
+    return num * 10
+}
+
+const arraySomada = arrayNums.map(multiplicaPorDez)
+
+console.log(arraySomada);
+

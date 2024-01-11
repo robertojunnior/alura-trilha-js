@@ -38,9 +38,11 @@ funcionarios.forEach((nome) => {
     let bonus2 = 100;
 
     if (entradaSalario <= 1500) {
-        alert(`${nome}, seu bônus salarial será de R$ ${(bonus1 + bonus2).toFixed(2)}, e seu novo salário será um total de R$ ${(entradaSalario + bonus1 + bonus2).toFixed(2)}.`);
+        alert(`${nome}, seu bônus salarial será de R$ ${(bonus1 + bonus2).toFixed(2)}, 
+        e seu novo salário será um total de R$ ${(entradaSalario + bonus1 + bonus2).toFixed(2)}.`);
     } else {
-        alert(`${nome}, seu bônus salarial será de R$ ${(bonus1).toFixed(2)}, e seu novo salário será um total de R$ ${(entradaSalario + bonus1).toFixed(2)}.`);
+        alert(`${nome}, seu bônus salarial será de R$ ${(bonus1).toFixed(2)}, 
+        e seu novo salário será um total de R$ ${(entradaSalario + bonus1).toFixed(2)}.`);
     }
 });
 
@@ -53,3 +55,14 @@ if (alturaMariana > 1.50) {
 } {
     console.log("É anãzinha mesmo");
 }
+
+//ex map com função declarada padrão
+
+const valores = [1, 3, 5, 7, 9]
+
+function somaMaisUm(valor) {
+    return valor + 1;
+}
+const valoresComSoma = valores.map(somaMaisUm);
+console.log(valoresComSoma);
+
