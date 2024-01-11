@@ -7,6 +7,10 @@
 </p>
 <br>
 
+ <a href="https://github.com/robertojunnior">
+  <img align="center" src="https://img.shields.io/static/v1?label=github&message=RoberJunior&color=7159c1&style=for-the-badge&logo=ghost"/>
+</a>
+
 ## 🚀 Tecnologias
 
 Esse projeto está sendo desenvolvido com as seguintes tecnologias:
