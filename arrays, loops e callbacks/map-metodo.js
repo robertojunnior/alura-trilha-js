@@ -1,18 +1,19 @@
 const notas = [10, 5.6, 2, 3.5];
+console.log(`Array notas, utilizado como referência: [${notas}]`);
 
 // map ex aula
 
 const novasNotas = notas.map((nota) => {
     return nota + 1 >= 10 ? 10 : nota + 1; // usando ternário para não ultrapassar nota máxima 10
 });
-console.log(novasNotas);
+console.log(`Retornando novas notas com 1 ponto a mais: ${novasNotas}`);
 
 
-// ex livre de map com função nominal declarada
+// ex livre de map com função nominal declarada global
 const pontoExtra = notas.map(function adicionaPonto(nota) {
     return nota + 2 >= 10 ? 10 : nota + 2;;
 })
-console.log(pontoExtra);
+console.log(`Adicionando 2 pontos extras: ${pontoExtra}.`);
 
 // ex livre de map com função anônima
 const numerosAumentados = notas.map(function (nota) {
@@ -39,22 +40,22 @@ funcionarios.forEach((nome) => {
     let bonus2 = 100;
 
     if (entradaSalario <= 1500) {
-        console.log(`${nome}, seu bônus salarial será de R$ ${(bonus1 + bonus2).toFixed(2)}, 
-        e seu novo salário será um total de R$ ${(entradaSalario + bonus1 + bonus2).toFixed(2)}.`);
+        console.log(`${nome}, seu bônus salarial será de R$ ${(bonus1 + bonus2).toFixed(2)},
+    e seu novo salário será um total de R$ ${(entradaSalario + bonus1 + bonus2).toFixed(2)}.`);
     } else {
-        console.log(`${nome}, seu bônus salarial será de R$ ${(bonus1).toFixed(2)}, 
-        e seu novo salário será um total de R$ ${(entradaSalario + bonus1).toFixed(2)}.`);
+        console.log(`${nome}, seu bônus salarial será de R$ ${(bonus1).toFixed(2)},
+    e seu novo salário será um total de R$ ${(entradaSalario + bonus1).toFixed(2)}.`);
     }
 });
 
 // ex de else if para mariana
 let alturaMariana = 1.49
 if (alturaMariana > 1.50) {
-    console.log("Ela cresceu");
+    console.log("Ela cresceu.");
 } else if (alturaMariana > 1.50 && alturaMariana < 1.80) {
-    console.log("Está crescendo");
+    console.log("Está crescendo.");
 } {
-    console.log("É anãzinha mesmo");
+    console.log("É anãzinha mesmo.");
 }
 
 //ex map com função declarada padrão e com parâmetro
@@ -91,11 +92,12 @@ valores3.map(function somarValor(valor) {
     contador += valor;
 });
 
-console.log(`Esta é o valor do contador: ${contador}!`);
+console.log(`Esta é a soma dos valores do array: ${contador}!`);
 
 //----------- somando mais um a cada iteração
+const valores4 = [10, 25, 43, 32];
 function somaMaisUm(valor) {
     return valor + 1;
 }
-const valoresComSoma = valores.map(somaMaisUm);
+const valoresComSoma = valores4.map(somaMaisUm);
 console.log(valoresComSoma); //mostrando os valores com a adição do return
