@@ -4,7 +4,9 @@ Projeto simples, utilizando apenas lógica básica para demonstrar a uma parceir
 
 O script é repetitivo, mas funciona em cascata para que ela se adapte a leitura, assim podendo criar as próprias lógicas, adicionar mais perguntas, botões e modificar o arquivo conforme for entendendo.
 
-## Acessar Quiz 👩🏻
+## Acesso ao Quiz 👩🏻
+
+Clique na imagem para acessar o Quiz:
 
 <a href="https://robertojunnior.github.io/alura-trilha-js/quiz-pombaHead">
 <img width="150px" src="download.png" alt="mobile"></a>
