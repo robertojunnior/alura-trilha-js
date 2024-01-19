@@ -17,3 +17,13 @@ const escolhaPorPreco = jogos.filter((nome, preco) => {
 })
 
 console.log(escolhaPorPreco);
+
+//-----------------------------------------
+
+const alunos2 = ["Mario", "José", "Roberto", "Paulo", "Rosana", "Astolfo"];
+const notas = [4, 2.5, 6, 7, 3, 8];
+
+const resultado = alunos2.filter((nome, indice2) => {
+    return notas[indice2] >= 7;
+})
+console.log(resultado);
