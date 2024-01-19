@@ -20,6 +20,6 @@ function operacaoNumerica(acc, atual) {
 }
 
 const soma3 = numeros3.reduce(operacaoNumerica, 0)
-console.log(soma3)
+console.log(soma3);
 
 
