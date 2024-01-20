@@ -7,8 +7,8 @@ console.log(soma) //170
 //-----------------------------------
 const numeros2 = [1, 9, 4, 7, 5];
 
-const soma2 = numeros2.reduce(function (acumulador, valor) {
-    return acumulador + valor;
+const soma2 = numeros2.reduce(function (acumulador, indice) {// o acc soma os valores iterados no array
+    return acumulador + indice;
 }, 0)
 console.log(soma2); //23
 
