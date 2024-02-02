@@ -5,10 +5,8 @@ const lista = [alunos, medias];
 
 function exibeNomeENota(aluno) {
   if (lista[0].includes(aluno)) {
-    // condição:  se existir o nome
+    // condição:  se existir o nome do aluno na lista
     const indice = lista[0].indexOf(aluno);
     const mediaAluno = lista[1];
   }
 }
-
-let joao = 23;
