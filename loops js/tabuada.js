@@ -2,12 +2,6 @@ let ul = document.querySelector("#tabuada");
 
 let numero = prompt("Digite o número para ver a tabuada:");
 
-let i = 0;
-while (i <= 10) {
-  console.log(`${numero} x ${i} = ${numero * i}`);
-  i++;
-}
-
 let entrada = 0;
 while (entrada <= 10) {
   let resultado = numero * entrada;
@@ -17,3 +11,10 @@ while (entrada <= 10) {
   ul.appendChild(li);
   entrada++;
 }
+
+// do while
+let i = 0;
+do {
+  console.log(`${numero} x ${i} = ${numero * i}`);
+  i++;
+} while (i <= 10);
